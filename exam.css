@@ -1,0 +1,1179 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    overflow-x: hidden;
+    width: 100%;
+
+    
+}
+header {
+    width: 100%;
+   height: 100%;
+    background-color: tomato;
+    position relative;
+}
+.logo {
+    width: 20%;
+  
+    
+}
+.logo h2 {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 40px;
+    font-weight: 500;
+    text-align: center;
+    color: black;
+    width: 200px;
+    border-right: 3px solid black;
+    border-left: 3px solid black;
+}
+.nav1{
+    width: 100%;
+    height: 75px;
+    position: sticky;
+    top: 0;
+    line-height: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 0px auto;
+    background-color: #fff;
+    z-index: 1;
+    box-shadow: 0px 0px 0px 0px rgb(247, 245, 245), 0px 0px 0px 0px rgb(255, 255, 255);
+
+}
+label {
+    display: none;
+}
+.nav2 {
+    display: none;
+}
+.links {
+   width: 65%;
+   background-color rgb(109, 41, 148);
+
+}
+.links ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style: none;
+}
+.links ul li {
+    display: block;
+    padding: 10px;
+    position: relative;
+}
+.links ul li a {
+    color: black;
+    font-size: 20px;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: capitalize;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    transition: 1s;
+    
+}
+.links ul li a i {
+    margin-right: 5px;
+    display: none;
+}
+ 
+.links ul li:hover {
+    background-color: rgb(197, 151, 143);
+    border-radius: 10px / 55px;
+}
+.btn {
+    background-color: rgb(197, 151, 143);
+    border-radius: 10px / 55px;
+}
+#check, label #bar {
+    display: none;
+}
+
+.set {
+   
+   width: 100%;
+  height: auto;
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+   margin:   auto;
+ 
+   
+    
+}
+
+
+.cont{
+
+    width: 700px;
+    height: 100%;
+    
+
+ 
+    padding: 20px;
+    margin: 30px 30px 30px 0px;
+    
+}
+.cont h1 {
+  
+    font-size: 65px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: white;
+    margin-bottom: 20px;
+    font-weight: 1000;
+}
+.cont p {
+    color: white;
+    margin-bottom: 15px;
+    margin-left: 10px;
+    font-size: 18px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    line-height: 1.5;
+    
+}
+.butt {
+    margin-top: 20px;
+   background-color: transparent;
+   font-size: 20px;
+   padding: 10px;
+   color: white;
+   border-color: white;
+  
+}
+.form{
+    width: 350px;
+    height: auto;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 10px;
+    margin-right: 30px;
+    position: relative;
+}
+.form h2 {
+    width: 250px;
+    height: 30px;
+    background-color:tomato;
+    color: #fff;
+    margin: 20px auto;
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding: 10px;
+    border-radius: 5px;
+    transition: 0.4s ease;
+}
+
+
+.form input {
+    width: 300px;
+    height: 30px;
+    background-color: transparent;
+    
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px solid tomato;
+    margin-top:  30px ;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 0px 10px;
+    position: relative;
+}
+.form input:focus{
+    outline: none;
+    padding-left: 20px;
+    border-bottom: 2px solid tomato;
+}
+.form .input:hover {
+    
+}
+::placeholder{
+    color: #000;
+    font-size: 16px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding: 0px 5px;
+}
+.inputbox {
+    position: relative;
+  
+    display: block;
+    width: 100%;
+}
+.user, #pass {
+    position: absolute;
+    font-size: 20px;
+  
+   transition: 0.8s ease-in-out;
+   
+}
+
+.user {
+    right: 30px;
+    bottom: 5px;
+    padding: 5px;
+    color:tomato;
+    cursor: pointer;
+}
+#pass {
+    right: 30px;
+    bottom: 5px;
+    padding: 5px;
+    color: tomato;
+   cursor: pointer;
+}
+
+.logbtn{
+    width: 200px;
+    height: 30px;
+    border: none;
+    background-color:tomato;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    margin: 30px auto 0px;
+    border-radius: 7px;
+    padding: 5px;
+    transition: 0.4s ease;
+    outline: none;
+}
+.logbtn a {
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
+   cursor: POINTER;
+}
+.logbtn:hover  {
+    width: 200px;
+    height: 30px;
+    border: none;
+    background-color: black;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    margin: 30px auto 0px;
+    border-radius: 7px;
+    padding: 5px;
+    transition: 0.4s ease;
+ 
+}
+
+.form .link {
+    text-align: center;
+    
+    font-size: 17px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+.form .link a {
+    color: tomato;
+}
+.form .liw {
+    text-align: center;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+.form .image-icon {
+    width: 100%;
+    height: 40px;
+   
+    text-align: center;
+    padding-top: 3px;
+    ;
+    color: tomato;
+    font-size: 35px;
+    cursor: pointer;
+   
+}
+.form .image-icon i {
+    padding-right: 5px;
+     transition: 0.5s ;
+}
+.image-icon i:hover {
+    font-size: 30px;
+
+}
+section {
+    width: 100%;
+    height: 100%;
+    position: relative;
+ 
+}
+.servicebut {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+    position: relative;
+    top: -20px;
+}
+.servicebut .but {
+    border-color: black;
+    border: none;
+    background-color: black;
+    color: white;
+    font-weight: 700;
+    text-transform: capitalize;
+   padding: 10px;
+   font-size: 17px;
+   text-transform: uppercase;
+    
+    
+}
+.cont2 {
+    width: 100%;
+    height: 100%;
+    max-width: 1000px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    margin-bottom: 20px;
+   
+    
+}
+
+.willdo {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+   
+}
+.web {
+    padding: 10px;
+    text-align: center;
+    
+}
+.web h3 {
+    font-size: 30px;
+    font-weight: 500;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+     color: black;
+ 
+     padding: 10px;
+     position: relative;
+}
+
+.web h3::after {
+    content: "";
+    position: absolute;
+    left: 20%;
+    bottom: 0;
+    width: 30%;
+    height: 3px;
+    background-color: black;
+    display: block;
+}
+.web p {
+    font-size: 18px;
+    margin: 35px 0px;
+}
+.web a {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 18px;
+    background-color: black;
+    color: white;
+    font-weight: 700;
+    text-transform: capitalize;
+    padding: 10px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+.portfo {
+    background-color:   tomato;
+    width: 100%;
+    height: 100%;
+}
+.port {
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: auto;
+    margin-bottom: 30px;
+  position: relative;
+  top: 30px;
+  
+ 
+   
+}
+.port h3 {
+    font-size: 20px;
+    font-weight: 500;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+     color: white;
+ 
+     padding: 10px;
+     position: relative;
+}
+.port a {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 18px;
+    background-color: black;
+    color: white;
+    font-weight: 700;
+    text-transform: capitalize;
+    padding: 10px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+.portcont {
+    width: 100%;
+    height: 100%;
+    max-width: 1000px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+   
+
+}
+.portbaby {
+    
+    border: 3px solid black;
+    padding: 20px;
+    margin: 5px;
+}
+.portbaby .image {
+    width: 250px;
+    height: 250px;
+    margin: auto;
+    margin-bottom: 10px;
+}
+.image img {
+    width: 250px;
+    height: 250px;
+    border-radius: 5px;
+
+   
+}
+.portbaby h3 {
+    font-size: 20px;
+    font-weight: 500;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+     color: white;
+ 
+     padding: 10px 10px 10px 0px;
+     
+}
+.portbaby p {
+    color: #fff;
+
+}
+section .offer {
+    width: 100%;
+    height: 100%;
+
+    position: relative;
+}
+.heads {
+    width: 550px;
+   position: relative;
+   left: 20%;
+   text-align: center;
+   border: 2px solid yellow;
+   
+}
+ h2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   padding: 20px 0px;
+    color: tomato;
+    font-size: 30px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin: auto;
+    font-weight: 600;
+}
+.par {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    text-align: center;    
+    
+}
+
+.contend {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: auto;
+    margin-top: 25px;
+    
+}
+.contain {
+    width: 80%;
+    max-width: 1000px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    padding: 20px;
+    border: 2px solid pink;
+    border-bottom: none;   
+}
+.weoffer {
+    
+     width: 100%;
+    border: 2px solid pink;
+    margin: 10px 5px;
+    padding: 10px;
+    position: relative;
+}
+.weoffer h3 {
+    font-size: 20px;
+    font-weight: 500;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+     color: tomato;
+ 
+     padding: 10px;
+     
+}
+.weoffer p {
+    
+   padding: 5px;
+    margin: 5px 0px;
+
+}
+.weoffer a {
+    display: inline-flex;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 14px;
+    background-color: tomato;
+    color: white;
+    font-weight: 300;
+    text-transform: capitalize;
+    padding: 5px;
+    text-decoration: none;
+    border-radius: 5px;
+    text-align: center;
+    float: right;
+
+  
+}
+.testy {
+    display: flex;
+    width: 80%;
+    height: 100%;
+
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
+.test {
+
+    width: 700px;
+    text-align: center;
+}
+.test p {
+      margin-bottom: 20px;
+}
+.test .images {
+    width: 300px;
+    height: 150px;
+    border: 2px solid gray;
+    padding: 40px;
+    margin: 15px auto;
+  
+    animation-name: box;
+    animation-iteration-count: infinite;
+    animation-duration: 5s;
+    animation-direction:  alternate;
+}
+@keyframesbox{
+    from {
+        margin-left: 10%;
+        width: 300%;
+      }
+    
+      to {
+        margin-left: 0%;
+        width: 100%;
+        background-color: tomato;
+      }
+}
+.test .images img {
+    border: 1px solid gray;
+    padding: 5px;
+}
+footer {
+    width: 100%;
+    height: 100px;
+    background-color: tomato;
+}
+
+@media only screen and (max-width: 1000px) {
+
+    header {
+        width: 100%;
+        height: 115vh;
+    }
+   
+    header .set {
+        width: 100%;
+        display: block;
+        margin: 100px auto;
+    }
+    header .set .cont {
+        
+        width: 100%;
+        text-align: center;
+    }
+    .cont h1 {
+        font-size: 50px;
+
+        margin-right: 30px;
+    }
+    header .form {
+        max-width: 600px;
+        width: 80%;
+        height: auto;
+        margin: 30px auto auto;
+        position: relative;
+        
+    }
+    header .form input {
+        width: 400px;
+        position: relative;
+        left: 90px;
+      
+    }
+    header .form .inputbox {
+        position: relative;
+       
+        width: 90%;
+    }
+    header .form .inputbox .user,header .form .inputbox #pass {
+         bottom: 0;
+        right: 50px;
+    }
+    .cont2 {
+        width: 90%;
+        display: block;
+        margin: auto;
+ 
+      border: 1px solid black;
+      border-radius: 10px;
+      margin-bottom: 40px;
+    }
+    .cont2 .willdo{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    .portcont {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        
+       
+    }
+    .offer .contend .contain {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .offer .contend .contain .weoffer {
+        width: 100%;
+        text-align: center;
+    }
+    .offer .contend .contain .weoffer h3 {
+        font-weight: bold;
+    }
+    
+    
+}
+
+@media only screen and (max-width: 715px) {
+    header {
+        width: 100%;
+        height: 120vh;
+    }
+    nav {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    nav .logo {
+       
+        margin-left: 0px;
+         width: auto;
+        text-align: center;
+         
+    }
+    nav .logo h2 {
+        font-size: 30px;
+        width: 150px;
+        
+    }
+    nav .links {
+        width: 60%;
+       margin-right: 0px;
+       
+    }
+    nav .links li {
+        padding: 5px;
+   
+    }
+    nav .links li a {
+        font-size: 14px;
+        font-weight: bold;
+        padding: 0px;
+        transition: 0.5s ease;
+    }
+    nav .links li:hover {
+        background-color: transparent;
+    }
+    nav .links li a:hover {
+        color: tomato;
+        font-size: 20px;
+       
+}
+    
+   header .form {
+       display: block;
+       width : 100%;
+     
+      
+   }
+   header .form input {
+       width: 80%;
+      
+       margin-left: -5%;
+       
+      
+   }
+}
+@media only screen and (max-width: 558px) {
+    header {
+        width: 100%;
+        height: 100%;
+       
+     
+    }
+    .nav1 {
+       
+        display: none;
+        
+    }
+    label {
+        display: block;
+    }
+    .nav2 {
+       
+        position: relative;
+        left: -1098px;
+
+        width: 100%;
+        height: 450px;
+        background-color: #fff;
+        transition: 0.8s;
+    }
+    .nav2 .links2 ul {
+        list-style: none;
+
+    }
+    .nav2 .links2 ul li a {
+        text-decoration: none;
+        display: block;
+        color: tomato;
+        font-size: 28px;
+        height: 100%;
+        text-transform: uppercase;
+        text-align: center;
+        line-height: 88px;
+
+       border-top: 1px solid rgba(59, 25, 25, 0);
+        border-bottom: 1px solid gray;
+        transition: 0.5s;
+    }
+    .nav2 .links2 ul li:hover a {
+        padding-left: -20px;
+        background-color: rgb(206, 185, 182);
+    }
+    .nav2 .links2 ul li a i {
+        margin-right: 10px;
+    }
+    .btn {
+        background-color: transparent;
+    }
+    .form {
+        border-bottom: 2px solid tomato;
+    }
+    
+    section .servicebut .but  {
+        background-color: tomato;
+
+        animation-name: bone;
+        animation-duration: 5s;
+        animation-iteration-count: infinite;
+        animation-delay: 3s;
+        animation-direction: alternate;
+    }
+    section .servicebut {
+        background-color blue;
+    }
+   @keyframes bone {
+    from {
+        background-color: #ff7a59;
+        width: 300px;
+        
+        margin-right: 60%;
+      }
+      75% {
+          margin-left: 5%;
+            width: 150%;
+           
+      }
+      to {
+        background-color: transparent;
+        border: 3px solid tomato;
+        color: tomato;
+        width: 250px;
+        margin-left: 0%;
+      }
+    }
+   
+    
+    /*
+    .nav2 .logo2 {
+        
+        width: 300px;
+        background-color: yellowgreen;
+       position: absolute;
+      
+       left: 3000px;
+       
+    }
+    .nav2 .logo2 .spaned { 
+        width: 100%;
+        left: 30px;
+         font-size: 40px;
+        color: tomato;
+        text-transform: uppercase;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+    */
+    #check {
+    display: none;
+    
+}
+
+
+label #bars, label #cancel, .spaned {
+    position: absolute;
+    cursor: pointer;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+    border-radius: 10px;
+}
+
+label #bars {
+    font-size: 30px;
+    color: tomato;
+    width: auto;
+    padding: 5px 7px;
+    left: 480px;
+    top: 30px;
+    transition: .5s;
+}
+
+label #cancel {
+    left: -1999px;
+     background-color: tomato;
+    top: 20px;
+   
+    z-index: 1111;
+    font-size: 30px;
+    color:white;
+    padding: 2px 6px;
+   
+    
+}
+ .spaned { 
+    width: auto;
+    padding: 5px 10px;
+    top: 25px;
+    left: 50px;
+     font-size: 40px;
+    color: tomato;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+#check:checked ~ .nav2 {
+    left: 0;
+    display: block;
+ 
+}
+
+#check:checked ~ label #bars {
+     left: 200px;
+     opacity: 0;
+     pointer-events: none;
+}
+#check:checked ~ label #cancel {
+    left: 430px;
+}
+}
+    /*
+    nav .links ul {
+        position: relative;
+        width: 167%;
+        height: auto;
+        line-height: 80px;
+        display: none;
+        padding: 5px 20px;
+        
+        text-align: center;
+        
+    }
+    nav .links ul li a {
+        font-size: 25px;
+      
+        
+    }
+    nav .links ul li:hover  {
+        background-color: pink;
+        width: 100%;
+    }
+    nav .logo {
+        width: 300px;
+        margin-left: 20px;
+       position: relative;
+     
+    }
+    nav .logo h2 { 
+        width: 100%;
+        font-size: 50px;
+    }
+    .btn {
+        background: transparent;
+    }
+    #check, label #bar {
+        
+       position: absolute;
+      
+    }
+    
+    label #bar {
+        display: block;
+        font-size: 30px;
+         top: 3%;
+        right: 30px;
+        color: tomato;
+        cursor: pointer;
+    }
+    #check:checked ~  header nav {
+        display: block;
+        width: 100%;
+        height: 550vh;
+    }
+    #check:checked ~  nav .links ul{
+        position: relative;
+        display: block;
+    }
+    #check:checked ~ label #bar {
+        display: block;
+        height: 75px;
+    }
+    header .set .cont {
+        width: 100%;
+        display: block;
+        margin: auto;
+
+    }
+    header .set .cont h1 {
+         display: block;
+         margin: auto;
+        font-size : 40px;
+        
+    }
+    header .set .cont p {
+        font-size: 14px;
+        margin: auto;
+    }
+    header .set .cont .butt {
+        font-size: 14px;
+        padding: 5px;
+    }
+    header .set .form {
+        width: 70%;
+        display: block;
+        margin: auto;
+        margin-top: 30px;
+        position: relative;
+    }
+    header .set .form h2 {
+        font-size: 18px;
+        width: 180px;
+    }
+    header .set .form input {
+        width: 80%;
+        position: relative;
+        left: 40px;
+        
+    }
+    ::placeholder {
+        font-size: 14px;
+    }
+    header .set .form .logbtn {
+        font-size: 16px;
+        width: 100px;
+    }
+    header .set .form, p {
+        font-size: 14px;
+    }
+    .cont2 .willdo .web h3 {
+        font-size: 25px;
+        font-weight: bold;
+        margin-top: 20px;
+        
+    }
+    .cont2 .willdo .web p {
+        margin-top: 20px;
+    }
+    .cont2 .willdo .web a {
+        font-size: 14px;
+        padding: 8px;
+        margin-top: 15px;
+    }
+    
+    .contend .contain {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+   */
+  .contend .contain .weoffer a {
+        font-size: 12px;
+        padding: 5px;
+        margin-right: 40px;
+    }
+}
+
+@media only screen and (max-width: 525px) {
+    header {
+        width: 100%;
+        height: 100%;
+       
+    }
+
+    
+    .nav2 {
+        position: relative;
+    }
+    header .set .form {
+        
+        margin-top: 35px;
+        border-bottom: 2px solid tomato;
+    }
+    label #bars {
+        font-size: 30px;
+        color: tomato;
+        width: auto;
+        padding: 5px 7px;
+        left: 80px;
+        top: 30px;
+        transition: .5s;
+    }
+    .spaned { 
+        width: auto;
+        padding: 5px 10px;
+        top: 25px;
+        left: 180px;
+         font-size: 40px;
+        color: tomato;
+  
+        font-weight: 700;
+        text-transform: uppercase;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+    
+}
+@media only screen and (max-width:532px) {
+    #check:checked ~ label #cancel {
+        left: 50px;
+        
+  }
+  label #bars {
+   
+   left: 30px;
+   top: 30px;
+   transition: .5s;
+}
+.spaned { 
+  
+   left: 150px;
+    
+}
+}
+@media only screen and (max-width:390px) {
+    body {
+        width: 100%;
+        height: 100%;
+    }
+    header {
+        width: auto;
+    }
+    header .set .cont h1 {
+        width: 100%;
+      
+    }
+    header .form .inputbox{
+        position: relative;
+        width: 300px;
+        left: -10px
+    }
+    header .form .inputbox input {
+        width: auto;
+    }
+    header .form .inputbox .user  {
+        right: 10px;
+    
+    }
+    header .form .inputbox #pass {
+        right: 10px;
+ 
+    }
+    
+    section .contend .contain .weoffer {
+        border-COLOR: tomato;
+       
+    }
+    .contend .contain .weoffer p {
+      background-color:tomato;
+    
+      text-align: center;
+      display: block;
+    }
+   #check:checked ~ label #cancel {
+         left: 50px;
+         
+   }
+   label #bars {
+    
+    left: 30px;
+    top: 30px;
+    transition: .5s;
+}
+.spaned { 
+   
+    left: 100px;
+     
+}
+
+}
+
+
